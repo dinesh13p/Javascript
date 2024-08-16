@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript can change HTML attribute values</h1>
+
+    <button onclick="handelLightOn()">Turn off Light</button>
+    <img id="imgOff" src="Light-bulb-ON.jpg" alt="" height="400px" width="284px">
+    <button onclick="handelLightOff()">Turn on Light</button>
+</body>
+
+<script>
+    function handelLightOn() {
+        document.getElementById('imgOff').src = "Light-bulb-ON.jpg"
+             
+    }
+
+    function handelLightOff() {
+
+        document.getElementById('imgOff').src = "imgoff.png"
+    }
+</script>
+</html>

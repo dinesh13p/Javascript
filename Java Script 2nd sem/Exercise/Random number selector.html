@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>Random Number Generator</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container {
+            text-align: center;
+            border: 3px solid black;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(77, 73, 73, 0.1);
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            border: 3px solid black;
+        }
+        label{
+            font-size: 15px;
+        }
+        #result {
+            font-size: 48px;
+            margin-top: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Random Number Generator</h1>
+            <label style="font-size: 25px;" for="min">from:</label>
+            <input type="number" id="min">
+            <label style="font-size: 25px;" for="max">to:</label>
+            <input type="number" id="max">
+        </div>
+        <div id="result">00</div>
+        <button onclick="generateRandomNumber()">Generate</button>
+    </div>
+
+    <script>
+        function generateRandomNumber() {
+            const min = parseInt(document.getElementById('min').value);
+            const max = parseInt(document.getElementById('max').value);
+            if (!isNaN(min) && !isNaN(max) && min < max) {
+                const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+                document.getElementById('result').innerText = randomNumber;
+            } 
+            else {
+                document.getElementById('result').innerText = 'Aayena';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

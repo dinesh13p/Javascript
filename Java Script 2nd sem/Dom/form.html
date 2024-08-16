@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" onsubmit="handClick()">
+        <input type="text" id="firstName" placeholder="first Name"> <br>
+        <input type="text" id="lastName" placeholder="Last Name"><br>
+
+        <button type="submit">Submit</button>
+
+
+    </form>
+
+
+    
+</body>
+
+<script>
+    function handClick(){
+        console.log("clicked");
+       let firstName = document.getElementById("firstName").value;
+       console.log(firstName);
+    }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Javascript
+        </title>
+    </head>
+    <body>
+        <h1 id="demo1">
+            What Can Javascript Do?
+        </h1>
+        <p id="demo2">Javascript can change HTML content</p>
+        <button onclick="count()">Click Me</button>
+        <button onclick="HeadingChange()">Change Heading</button>
+        <button onclick="HandleTextChange()">Change Text</button>
+
+        <!-- <button onclick="for(let i=1; i<=10; i++){
+            console.log('i');
+        }">Click Me!</button> -->
+
+    </body>
+    <script>
+        function count(){
+            for (let i = 1; i <=10; i++)
+            {console.log(i)}
+        }
+
+        function HandleTextChange ( ) {
+            const text=document.getElementById("demo2");
+            console.log(text);
+            text.innerHTML = "Hello World";
+        }
+
+        function HeadingChange ( ) {
+            const Heading=document.getElementById("demo1");
+            console.log(Heading);
+            Heading.innerHTML = "Changed Heading";
+        }
+    </script>
+</html>

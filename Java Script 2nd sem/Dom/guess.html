@@ -1,0 +1,107 @@
+<html>
+<head>
+  <title>Guessing Game</title>
+  <style>
+    /* Add some basic styling to make the game look nicer */
+    body {
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .container {
+      justify-content: center;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333;
+    }
+    input[type="number"] {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 18px;
+      border: 1px solid #ccc;
+    }
+    button[type="submit"] {
+      width: 100%;
+      height: 40px;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+    #message {
+      font-size: 18px;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Guessing Game</h1>
+    <p>Guess a number between 1 and 100</p>
+    <form onsubmit="checkGuess(event)">
+      <input type="number" id="guess" min="1" max="100" />
+      <button type="submit">Guess</button>
+    </form>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+
+    function checkGuess(e) {
+      e.preventDefault();
+
+      const userGuess = document.getElementById("guess").value;
+      const message = document.getElementById("message");
+
+      attempts++;
+
+      if (userGuess == randomNumber) {
+        message.textContent = `Congratulations! You guessed it right in ${attempts} attempts.`;
+        message.style.color = "green";
+      } else if (userGuess > randomNumber) {
+        message.textContent = "Too high! Try a little bit lower.";
+        message.style.color = "red";
+      } else {
+        message.textContent = "Too low! Try a little bit higher.";
+        message.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

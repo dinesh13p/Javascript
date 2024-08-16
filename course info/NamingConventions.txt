@@ -1,0 +1,46 @@
+Spaces are not allowed in variable names.
+Only letters, digits, underscores and dollarsign are permitted in variable names.
+Reserved words in JS shouldn't be used to variable names.
+A letter (alphabet), underscore (_) or a dollarsign ($) must be first character in a variable name, other special characters shouldn't be used to name variables.
+
+
+Questions:
+----------variable:-----------
+Variables are containers for storing information. Creating a variable in JavaScript is called "declaring" a variable: var carName; After the declaration, the variable is empty (it has no value).
+
+-----------Javascript:-----------
+JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.
+
+--------Applications of JS:----------
+Web Development. JavaScript is a scripting language used to develop web pages.
+Web Applications.
+Presentations.
+Server Applications.
+Web Servers.
+Games.
+
+----------Frontend vs Backend:-----------
+The frontend is what your users see and includes visual elements like buttons, checkboxes, graphics, and text messages. It allows your users to interact with your application. The backend is the data and infrastructure that make your application work. It stores and processes application data for your users.
+
+----------How to use JS:----------
+Open your favorite browser (here we will use Google Chrome).
+Open the developer tools by right clicking on an empty area and select Inspect. Shortcut: F12 . Inspect Browser.
+On the developer tools, go to the console tab. Then, write JavaScript code and press enter to run the code.
+
+---------Non-primitive/Reference---------
+-object
+-Array
+-function
+
+-----Operators-----
+-Arithmetic oprator(+ - / * %)
+Assignment operator(= += -= /= *=)
+Comparison operator(< > >= =< !=)
+Logical Operator (&& || !)
+Ternary
+
+--------Type conversion:---------
+Process of converting data of one type to another. eg; converting string datatype to number
+Two types of conversion:-
+1. Implict conversion: Automatic conversion
+2. Explicit conversion: Manual conversion

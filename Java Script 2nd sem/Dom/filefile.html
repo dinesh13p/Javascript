@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>counter application</title>
+    <style>
+        #div-sec {
+            /* border: 2px ; */
+            height: 350px;
+            width: 80vh;
+            margin-left: 25%;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 15%;
+            background-color: rgb(18, 219, 226);
+
+
+        }
+
+        body {
+           background-color: white;
+        }
+
+        #count {
+            font-size: 40px;
+        }
+        
+        #reset,
+        #decrease,
+        #increase,
+        #plus5,
+        #minus2 {
+            margin-left: 40px;
+           background-color: red;
+           font-size: 40px;
+           border-radius: 2px;
+
+        }
+
+        #increase.hover {
+
+            background-color: rgb(24, 13, 231);
+            height: 20px;
+            width: 30px;
+        }
+/* #increase,        
+#decrease {
+    background-color: blueviolet;
+    font-size: 20px;
+} */
+
+
+
+    </style>
+</head>
+
+<body>
+    <section id="div-sec">
+        <div>
+        <h1 id="heading" style="font-size: 40px;">counter application</h1>
+        </div>
+        <div>
+        <p id="count">0</p>
+        </div>
+        <div>
+        <button id="decrease" onclick="decrease()">-</button>
+        <button id="increase" onclick="increase()">+</button>
+        <button id="reset" onclick="reset()">reset</button>
+        <button id="plus5" onclick="plus5()">+5</button>
+        <button id="minus2" onclick="minus2()">-2 </button>
+        </div>
+    </section>
+
+
+    <script>
+
+        let count = 0;
+        const countDisplay = document.getElementById('count');
+
+        function increase() {
+            count++;
+            countDisplay.textContent = count;
+        }
+
+        function decrease() {
+
+            count--;
+            countDisplay.textContent = count;
+
+        }
+
+        function reset() {
+            count = 0;
+            countDisplay.textContent = count;
+        }
+       function plus5(){
+        count= count +5;
+        countDisplay.textContent = count;
+       }
+
+       function minus2(){
+        count= count -2;
+        countDisplay.textContent = count;
+       }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
